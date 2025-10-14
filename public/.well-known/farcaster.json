@@ -1,0 +1,30 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "frame": {
+    "version": "1",
+    "name": "KOL Engage",
+    "subtitle": "Built with Zara",
+    "description": "KOL Engage is a Base Mini App built with Zara.",
+    "iconUrl": "https://0co.to/images/zara-2.png",
+    "homeUrl": "https://app-99cf3a53-1eb7.vercel.app",
+    "splashImageUrl": "https://app-99cf3a53-1eb7.vercel.app/splash.png",
+    "splashBackgroundColor": "#000000",
+    "heroImageUrl": "https://app-99cf3a53-1eb7.vercel.app/image.png",
+    "tagline": "KOL Engage",
+    "screenshotUrls": [
+      "https://app-99cf3a53-1eb7.vercel.app/screenshot.png",
+      "https://app-99cf3a53-1eb7.vercel.app/screenshot.png"
+    ],
+    "primaryCategory": "social",
+    "tags": [
+      "base",
+      "miniapp",
+      "onchainkit"
+    ],
+    "webhookUrl": "https://app-99cf3a53-1eb7.vercel.app/api/webhook"
+  }
+}
