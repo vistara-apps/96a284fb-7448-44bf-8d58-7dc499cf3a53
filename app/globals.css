@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Coinbase Theme */
+  --color-bg: #0a1929;
+  --color-fg: #e3f2fd;
+  --color-surface: #132f4c;
+  --color-accent: #0052ff;
+  --color-primary: #0052ff;
+  --color-secondary: #5090d3;
+  --color-success: #00c853;
+  --color-danger: #ff1744;
+  
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  
+  --shadow-card: 0 8px 24px rgba(0, 82, 255, 0.12);
+  --shadow-button: 0 4px 12px rgba(0, 82, 255, 0.2);
+}
+
+@layer base {
+  * {
+    @apply border-gray-700;
+  }
+  
+  body {
+    @apply bg-bg text-fg antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background: rgba(19, 47, 76, 0.6);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(227, 242, 253, 0.1);
+  }
+  
+  .gradient-border {
+    position: relative;
+    background: var(--color-surface);
+  }
+  
+  .gradient-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(0, 82, 255, 0.5), rgba(80, 144, 211, 0.3));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  
+  .btn-primary {
+    @apply bg-gradient-to-r from-primary to-secondary text-white px-6 py-3 rounded-theme-lg font-medium hover:from-blue-600 hover:to-blue-400 transition-all duration-200 shadow-theme-button;
+  }
+  
+  .btn-secondary {
+    @apply glass-card text-fg px-6 py-3 rounded-theme-lg font-medium hover:bg-opacity-80 transition-all duration-200;
+  }
+  
+  .metric-card {
+    @apply glass-card p-4 rounded-theme-lg hover:bg-opacity-70 transition-all duration-200;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+  }
+}

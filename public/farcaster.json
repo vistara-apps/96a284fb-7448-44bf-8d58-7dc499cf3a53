@@ -1,0 +1,16 @@
+{
+  "frame": {
+    "name": "KOL Engage",
+    "homeUrl": "https://kolengage.farcaster.app/home",
+    "iconUrl": "https://kolengage.farcaster.app/icon.png",
+    "version": "vNext",
+    "webhookUrl": "https://api.kolengage.farcaster.app/webhook/farcaster",
+    "splashImageUrl": "https://kolengage.farcaster.app/splash.png",
+    "splashBackgroundColor": "#0A1929"
+  },
+  "accountAssociation": {
+    "header": "Connect your Farcaster account to KOL Engage to start creating and earning!",
+    "payload": "kolengage.farcaster.app",
+    "signature": ""
+  }
+}
